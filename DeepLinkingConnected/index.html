@@ -1,0 +1,19 @@
+<html ng-app="app">
+	<head>
+		<title>DeepLink Connected Example</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+		<meta charset="utf-8">
+		<script src="app.js"></script>
+	</head>
+	<body>
+		<div ng-controller="appController">
+			<button ng-click="getData()">Get Data</button>
+			<h2 ng-show="fruits.length > 0">Fruits</h2>
+			<ul>
+				<li ng-repeat="fruit in fruits">
+					{{fruit.id}} - {{fruit.name}} ({{fruit.color}})
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
